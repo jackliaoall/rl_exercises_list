@@ -1,0 +1,1 @@
+# coding:utf-8"""RaspberryPi用センサテスト用プログラムCopyright(c) 2018 Koji Makino and Hiromitsu Nishizaki All Rights Reserved."""import timeimport RPi.GPIO as GPIOtime.sleep(1)GPIO.setmode(GPIO.BOARD)GPIO.setup(13, GPIO.IN)GPIO.setup(15, GPIO.IN)while(1):    print(GPIO.input(13) + "\t" +GPIO.input(15))    time.sleep(0.5)
